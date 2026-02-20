@@ -1,16 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <funciones.h>
-
-
-typedef struct Pokemon {
-    char apodo[50];
-    char especie[50];
-    int nivel;
-    int xp;
-    int clave;
-} pokemon_t;
+#include "funciones.h"
 
 
 int main(){
@@ -23,15 +14,16 @@ int main(){
         printf("4. Salir\n");
         printf("Selecciona una accion:  \n");
         scanf("%d", &opcion);
+        getchar();
         switch (opcion){
             case 1:
-            // capturarPokemon();
+            capturar_Pokemon();
             break;
-            case 2: 
-            // mostrarPokemon();
+            case 2:
+            mostrar_Pokemones();
             break;
             case 3:
-            // eliminarPokemon();
+            eliminar_Pokemon();
             break;
             case 4:
             printf("Adios\n");

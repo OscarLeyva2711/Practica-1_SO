@@ -7,9 +7,10 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                "${workspaceFolder}/main.c",
+                "${workspaceFolder}/funciones.c",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${workspaceFolder}/pokemones"
             ],
             "options": {
                 "cwd": "${fileDirname}"
